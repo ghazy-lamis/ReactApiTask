@@ -1,0 +1,66 @@
+/* General App Styles */
+.App {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 2rem 5%;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.card {
+    transition: transform .2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border: none; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+/* Card Image Styles */
+.Image {
+    width: 100%; 
+    max-height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

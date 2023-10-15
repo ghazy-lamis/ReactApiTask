@@ -1,38 +1,91 @@
+/* General App Styles */
 .App {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 2rem 5%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Card Styles */
+.card {
+  transition: transform .2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  border: none; 
+  width: 270px;
+  display: flex;
+  flex-direction: column; /* Makes sure the content stacks vertically */
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Card Image Styles */
+.Image {
+  width: 30%; /* Increase to full width of the card */
+  max-height: 220px; /* Adjusting the image height */
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  flex: 1; /* This will make card-body take up remaining space */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  flex: 1; /* Take the remaining vertical space */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  flex: 2; /* Allocating more space for the description */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Number of lines you want to display */
+  overflow: hidden;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+  align-self: center; /* Center the button horizontally */
+  margin-top: auto; /* Push the button to the bottom */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
 }
